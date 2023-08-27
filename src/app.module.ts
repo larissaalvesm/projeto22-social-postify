@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { PostsModule } from './posts/posts.module';
 import { PublicationsModule } from './publications/publications.module';
 import { MediasModule } from './medias/medias.module';
+import { PrismaModule } from './prisma/prisma.module';
 
 @Module({
   imports: [PostsModule, PublicationsModule, MediasModule],
