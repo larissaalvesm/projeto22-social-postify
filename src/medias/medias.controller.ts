@@ -8,7 +8,7 @@ export class MediasController {
   constructor(private readonly mediasService: MediasService) {}
 
   @Post()
-  @HttpCode(HttpStatus.OK)
+  @HttpCode(HttpStatus.CREATED)
   create(@Body() createMediaDto: CreateMediaDto) {
     return this.mediasService.create(createMediaDto);
   }
